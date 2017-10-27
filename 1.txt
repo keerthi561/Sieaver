@@ -1,0 +1,3 @@
+1) Made the introduction to the app
+2) Added firebase as backend for stroring personal information
+3) Added in app camera support , so that user is able to do PAN based E-kyc.

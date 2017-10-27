@@ -12,5 +12,7 @@ public class InputPanDetails extends SieverBaseActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pan_details);
+
+
     }
 }
