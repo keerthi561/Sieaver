@@ -1,6 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-</resources>
+    <resources>
+        <color name="colorPrimary">#10243c</color>
+        <color name="colorPrimaryTransparent">#9910243c</color>
+        <color name="colorPrimaryLight">#224268</color>
+        <color name="colorPrimaryDark">#0F2137</color>
+        <color name="colorNileBlue">#19324F</color>
+        <color name="colorBigStone">#11263E</color>
+        <color name="colorArawa">#224267</color>
+        <color name="colorMirage">#0C1B2C</color>
+        <color name="colorPickleBluewood">#324760</color>
+        <color name="colorBlueDivider">#2C415A</color>
+        <color name="colorWaikawa">#60738B</color>
+        <color name="colorSanJuan">#2D4A6B</color>
+        <color name="colorLima">#7DD028</color>
+        <color name="colorCarnation">#FF5C5C</color>
+        <color name="colorFlamingo">#E55252</color>
+        <color name="colorDullRed">#C24545</color>
+        <color name="colorSnowDrift">#F8FCF4</color>
+        <color name="colorAliceBlue">#F2FAFD</color>
+        <color name="colorRichElectricBlue">#0B8EC5</color>
+        <color name="tabTextColor">#B6B6B6</color>
+        <color name="colorCerulean">#0D9DD8</color>
+        <color name="colorHorizontalBarInfo">#10263C</color>
+        <color name="colorTuftsBlue">#397FD1</color>
+        <color name="colorBlueGreen">#1389BA</color>
+        <color name="colorLogo">#FF8119</color>
+        <color name="colorAccent">#FF9742</color>
+        <color name="simpletooltip_background">@color/colorAccent</color>
+        <color name="colorCadmiumOrange">#F28832</color>
+        <color name="colorNeonCarrot">#FF9035</color>
+        <color name="simpletooltip_text">@android:color/primary_text_light</color>
+        <color name="simpletooltip_arrow">#FFFFFF</color>
+        <color name="colorEtBottomLine">#31455D</color>
+        <color name="textColor">#B6B6B6</color>
+        <color name="colorDivider">#22FFFFFF</color>
+        <color name="textColorTransparent">#99FFFFFF</color>
+        <color name="colorGreen">#75C327</color>
+        <color name="colorYellow">#FFBE00</color>
+        <color name="colorSmokeYellow">#EBBA28</color>
+        <color name="cardTitleColor">#CBCBCB</color>
+        <color name="cardColorSqrrlAwayZeroState">#FFFCF2</color>
+        <color name="colorFadedYellow">#FFF9E5</color>
+        <color name="colorGoldenSand">#F1CE66</color>
+        <color name="colorPendingBackgroundSA">#FFFCF2</color>
+        <color name="colorPendingBackgroundByod">#F2FAFD</color>
+        <color name="colorPendingBackgroundAxeTax">#FEF6F9</color>
+        <color name="colorPinkDot">#E88EAB</color>
+        <color name="colorBlueDot">#58BDE7</color>
+        <color name="colorBlueButton">#48CFC7</color>
+        <color name="cardColorBtwZeroState">#FEF6F9</color>
+        <color name="textColorUniversal">#FFFFFF</color>
+        <color name="subTextColor">#9B9B9B</color>
+        <color name="colorWildSand">#F4F4F4</color>
+        <color name="colorCardFooterBackground">#0D7A70E2</color>
+        <color name="colorAlabaster">#FCFCFC</color>
+        <color name="colorBonJour">#E2E2E2</color>
+        <color name="colorRoseWhite">#FFF8F3</color>
+        <color name="colorTropicalBlue">#C8DDF6</color>
+        <color name="colorHavelockBlue">#4A90E2</color>
+        <color name="colorJazzberryJam">#C23E6E</color>
+        <color name="subTextColorTwo">#C8C8C8</color>
+        <color name="textColorPrimary">#2D2D2D</color>
+        <color name="textColorSecondary">#929292</color>
+        <color name="blackTransparentBackGround">#B3000000</color>
+        <color name="colorLightGrey">#EDEDED</color>
+        <color name="colorFadedWhite">#F8F8F8</color>
+        <color name="colorBtw">#E1527F</color>
+        <color name="colorBtwEndColor">#F4709A</color>
+        <color name="colorBtwDark">#BA4E73</color>
+        <color name="colorAxisPrimary">#AE285D</color>
+        <color name="colorAxisPrimaryDark">#9C2353</color>
+        <color name="colorDeepBlush">#E1678E</color>
+        <color name="colorBlush">#CD5F82</color>
+        <color name="colorAxisLight">#FBF4F7</color>
+        <color name="colorIciciPrimary">#F58220</color>
+        <color name="colorIciciPrimaryDark">#DC741C</color>
+        <color name="colorIciciLight">#FEF9F4</color>
+        <color name="colorPpf">#48CFC7</color>
+        <color name="colorComparisonGraphBackGround">#203A59</color>
+        <color name="colorComparisonGraphAreaSqrrl">#4D4E57</color>
+        <color name="colorComparisonGraphArea5YrFd">#4A5659</color>
+        <color name="colorComparisonGraphAreaPpf">#2A5E7B</color>
+        <color name="colorByod">#0095D3</color>
+        <color name="colorByodEndColor">#12AEEF</color>
+        <color name="colorByodDark">#0090C4</color>
+        <color name="colorSqrrlAway">#FFBE00</color>
+        <color name="colorSqrrlAwayEndColor">#FECC33</color>
+        <color name="colorSqrrlAwayDark">#E5B100</color>
+        <color name="colorSqrrl">#FF8119</color>
+        <color name="colorSqrrlEndColor">#F88A00</color>
+        <color name="emptyBarColor">#F1F1F1</color>
+        <color name="colorBarLabels">#DBDBDB</color>
+        <color name="withdrawColor">#FF5C5C</color>
+        <color name="withdrawColorDark">#FF4242</color>
+        <color name="investColor">#7DD028</color>
+        <color name="investStatusBarColor">#69AF23</color>
+        <color name="withdrawBackGroundColor">#F6F9FB</color>
+        <color name="withdrawStatusBarColor">#DCDFE1</color>
+        <color name="withdrawBackGroundColorOpacity50">#80F6F9FB</color>
+        <color name="withdrawEtBottomLineColor">#D8D8D8</color>
+        <color name="whiteBackground">#FFFFFF</color>
+        <color name="colorWhiteOpacity10">#1AFFFFFF</color>
+        <color name="colorWhiteOpacity20">#33FFFFFF</color>
+        <color name="colorWhiteOpacity50">#80FFFFFF</color>
+        <color name="colorWhiteOpacity60">#99FFFFFF</color>
+        <color name="colorWhiteOpacity40">#66FFFFFF</color>
+        <color name="colorWhiteOpacity30">#4DFFFFFF</color>
+        <color name="colorWhiteOpacity0">#FFFFFFFF</color>
+        <color name="colorBlackOpacity70">#B3000000</color>
+        <color name="colorBlackOpacity50">#80000000</color>
+        <color name="colorBlackOpacity80">#CC000000</color>
+        <color name="colorNumberingBackground">#18314F</color>
+        <color name="colorNumberingBorder">#445870</color>
+        <color name="colorBackGroundCta">#F8F8FD</color>
+        <color name="colorRvDivider">#EFEFEF</color>
+        <color name="colorPrefsSubtext">#CBCBCB</color>
+        <color name="colorDateBackgroundSa">#F8F5EB</color>
+        <color name="colorDateBackgroundByod">#EBF4F7</color>
+        <color name="colorDateBackgroundAt">#F7F0F2</color>
+        <color name="colorByodProcessingCtaBack">#E5F5FB</color>
+        <color name="colorSaProcessingCtaBack">#FFF9E5</color>
+        <color name="colorAxeTaxProcessingCtaBack">#FDEEF3</color>
+        <color name="colorToolbar">#E610243c</color>
+        <color name="lightGreen">#BAE193</color>
+        <color name="fullyTransparent">#00000000</color>
+        <!-- colors alphabetically -->
+        <color name="black">#000000</color>
+        <color name="lightBlack">#7A7A7A</color>
+
+        <array name="array_dot_active">
+            <item>@color/colorSqrrlAway</item>
+            <item>@color/colorByod</item>
+            <item>@color/colorBtw</item>
+            <item>@color/colorSqrrl</item>
+        </array>
+
+        <array name="array_dot_inactive">
+            <item>#33FFBE00</item>
+            <item>#3300A0E3</item>
+            <item>#33EA5987</item>
+            <item>#33FF8119</item>
+        </array>
+
+    </resources>

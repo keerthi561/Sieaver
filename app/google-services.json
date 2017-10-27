@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "457549885500",
+    "firebase_url": "https://siever-74173.firebaseio.com",
+    "project_id": "siever-74173",
+    "storage_bucket": "siever-74173.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457549885500:android:8df1a411c92cb485",
+        "android_client_info": {
+          "package_name": "com.example.sridhar123.sieaver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457549885500-hqggfvmakld63e3402ctlsp6t1b6ubc6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sridhar123.sieaver",
+            "certificate_hash": "1c934df916f85864c7eb726d7f4b4dee2a686209"
+          }
+        },
+        {
+          "client_id": "457549885500-jak3qr333fr6bsdsf6fca8k20vkjaglq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbjBoV9XSq6izgXLCk3IR4GtA1I517Qy4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457549885500-jak3qr333fr6bsdsf6fca8k20vkjaglq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

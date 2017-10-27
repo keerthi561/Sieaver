@@ -3,7 +3,7 @@ package com.example.sridhar123.sieaver;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends SieverBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
