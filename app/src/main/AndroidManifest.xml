@@ -3,6 +3,7 @@
     package="com.example.sridhar123.sieaver">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -10,6 +11,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"/>
@@ -24,6 +26,7 @@
         <activity android:name=".Intros.IntroductionActivity"
             android:screenOrientation="portrait"></activity>
         <activity android:name=".InputDetailsActivity"></activity>
+        <activity android:name=".InputPanDetails"></activity>
     </application>
 
 </manifest>

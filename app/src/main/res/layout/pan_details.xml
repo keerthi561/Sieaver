@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Enter your PAN Details"
+            android:textColor="@color/textColorUniversal"
+            android:textSize="14sp"
+            app:fontName="LibreFranklin-Medium.ttf" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="93dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/panInputMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhiteOpacity50">
+
+            <EditText
+                android:id="@+id/etPan"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="Enter Pan"
+                android:maxLength="10"
+                android:textIsSelectable="false"
+                android:textColor="@color/textColorUniversal"
+                android:textSize="16sp"
+                 />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:textColorHint="@color/colorWhiteOpacity50">
+
+            <EditText
+                android:id="@+id/etDob"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textIsSelectable="false"
+                android:textColor="@color/textColorUniversal"
+                android:textColorHint="@color/colorWhiteOpacity50"
+                android:textSize="16sp"
+                android:hint="Date of birth"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+
+            <ImageButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_verifying_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.github.rahatarmanahmed.cpv.CircularProgressView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cpv_animAutostart="true"
+                    app:cpv_animDuration="4000"
+                    app:cpv_animSteps="3"
+                    app:cpv_indeterminate="true"
+                    app:cpv_thickness="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:text="Please wait..."
+                    android:textColor="@color/colorWhiteOpacity50"
+                    android:textSize="9sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

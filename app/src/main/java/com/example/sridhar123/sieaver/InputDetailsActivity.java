@@ -1,10 +1,12 @@
 package com.example.sridhar123.sieaver;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.sridhar123.sieaver.FirebaseDatabase.InputDetailsModel;
 import com.google.firebase.database.DatabaseReference;
@@ -37,9 +39,24 @@ public class InputDetailsActivity extends SieverBaseActivity{
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                writeNewUser(etName.getText().toString(),etEmail.getText().toString(),etReferralCode.getText().toString());
+                if(Utility.isEmailValid(etEmail.getText().toString()) && !etName.getText().toString().isEmpty() && !etReferralCode.getText().toString().isEmpty()) {
+                    writeNewUser(etName.getText().toString(), etEmail.getText().toString(), etReferralCode.getText().toString());
+                    startActivity(new Intent(InputDetailsActivity.this,InputPanDetails.class));
+                }
+                else{
+                    if(!Utility.isEmailValid(etEmail.getText().toString()))
+                        Toast.makeText(InputDetailsActivity.this,"Kindly enter valid email",Toast.LENGTH_SHORT).show();
+                    else if(etName.getText().toString().isEmpty()){
+                        Toast.makeText(InputDetailsActivity.this,"Enter a name",Toast.LENGTH_SHORT).show();
+                    }
+                    else if(etReferralCode.getText().toString().isEmpty()){
+                        Toast.makeText(InputDetailsActivity.this,"Enter a referal code",Toast.LENGTH_SHORT).show();
+                    }
+
+                }
             }
-        });}
+        });
+    }
 
     private void writeNewUser(String name, String email, String code) {
         InputDetailsModel input=  new InputDetailsModel(name,email,code);
