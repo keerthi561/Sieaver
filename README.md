@@ -25,6 +25,7 @@ every time . Getting motivated to solve this particular problem , I have decided
 sum of money and invest in Debt funds and slowly and steadily the money will grow which can be monitored by the app..And there will come a time 
 when the goal will be reached and then plan a trip to Goa!The user will need to enter the amount of money he requires to achieve a particular goal and 
 and the app will show the time it will take to achieve it.
+The money will be invested in debt funds of the mutual funds category . The reason behind this is that the interest rates on debt funds remain same for a paeriod of months and so the user will be getting contant money each time.
 
 3) **Bashing the Tax**
 

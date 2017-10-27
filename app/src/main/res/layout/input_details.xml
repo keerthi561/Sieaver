@@ -185,12 +185,14 @@
             </LinearLayout>
         </FrameLayout>
 
-        <ImageButton
+        <Button
             android:id="@+id/btnForward"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:visibility="visible" />
+            android:visibility="visible"
+            android:text="Submit"
+            />
 
     </LinearLayout>
 

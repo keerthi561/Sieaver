@@ -1,6 +1,7 @@
 package com.example.sridhar123.sieaver.Intros;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.PagerAdapter;
@@ -12,6 +13,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.example.sridhar123.sieaver.InputDetailsActivity;
 import com.example.sridhar123.sieaver.R;
 import com.example.sridhar123.sieaver.SieverBaseActivity;
 import com.squareup.picasso.Picasso;
@@ -67,16 +69,28 @@ public class IntroductionActivity extends SieverBaseActivity {
         public Object instantiateItem(ViewGroup container, int position) {
             layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             final ImageView image;
+            Button btnSkip=null;
+            final Button btnSkip1;
             View view = layoutInflater.inflate(layouts[position], container, false);
-            container.addView(view);
 
-            Button btnSkip = (Button) findViewById(R.id.btn_skip);
-            btnSkip.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    viewPager.setCurrentItem(3);
-                }
-            });
+            if(position < 3) {
+                btnSkip1 = view.findViewById(R.id.btnSkip);
+                btnSkip1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        viewPager.setCurrentItem(3);
+                    }
+                });
+            }else{
+                btnSkip = view.findViewById(R.id.btnSkip);
+                btnSkip.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(IntroductionActivity.this, InputDetailsActivity.class));
+                        finish();
+                    }
+                });
+            }
 
             image = view.findViewById(R.id.image);
             Picasso.with(IntroductionActivity.this)
@@ -84,6 +98,7 @@ public class IntroductionActivity extends SieverBaseActivity {
                     .resize(600,400)
                     .into(image);
 
+            container.addView(view);
             return view;
         }
 
