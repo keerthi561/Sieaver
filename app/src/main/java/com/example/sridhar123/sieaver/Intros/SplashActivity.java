@@ -1,10 +1,13 @@
-package com.example.sridhar123.sieaver;
+package com.example.sridhar123.sieaver.Intros;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import android.os.Handler;
+
+import com.example.sridhar123.sieaver.R;
+import com.example.sridhar123.sieaver.SieverBaseActivity;
 
 /**
  * Created by sridhar123 on 27/10/17.

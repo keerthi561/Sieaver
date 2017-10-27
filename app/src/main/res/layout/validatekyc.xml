@@ -63,12 +63,8 @@
                     android:textColor="@color/subTextColor"
                     android:textSize="16sp"
                     />
-
             </LinearLayout>
-
-
         </FrameLayout>
-
     </LinearLayout>
 
     <Button

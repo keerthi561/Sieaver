@@ -1,4 +1,4 @@
-package com.example.sridhar123.sieaver;
+package com.example.sridhar123.sieaver.Intros;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,6 +12,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.example.sridhar123.sieaver.R;
+import com.example.sridhar123.sieaver.SieverBaseActivity;
+import com.squareup.picasso.Picasso;
+
 /**
  * Created by sridhar123 on 27/10/17.
  */
@@ -20,6 +24,7 @@ public class IntroductionActivity extends SieverBaseActivity {
 
     private ViewPager viewPager;
     private LinearLayout dotsLayout;
+    private int[] images = {R.drawable.bg_intro, R.drawable.bg_byod_intro, R.drawable.bg_sa_intro,R.drawable.bg_intro};
     private int[] layouts;
     private Button buttonSkip,buttonNext;
 
@@ -30,8 +35,15 @@ public class IntroductionActivity extends SieverBaseActivity {
         setContentView(R.layout.activity_intro);
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
-        buttonNext = (Button) findViewById(R.id.btn_skip);
-        buttonSkip = (Button) findViewById(R.id.btn_next);
+        buttonNext = (Button) findViewById(R.id.btn_next);
+        buttonSkip = (Button) findViewById(R.id.btn_skip);
+
+        buttonSkip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewPager.setCurrentItem(3);
+            }
+        });
 
         layouts = new int[]{
                 R.layout.validatekyc,
@@ -57,6 +69,21 @@ public class IntroductionActivity extends SieverBaseActivity {
             final ImageView image;
             View view = layoutInflater.inflate(layouts[position], container, false);
             container.addView(view);
+
+            Button btnSkip = (Button) findViewById(R.id.btn_skip);
+            btnSkip.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    viewPager.setCurrentItem(3);
+                }
+            });
+
+            image = view.findViewById(R.id.image);
+            Picasso.with(IntroductionActivity.this)
+                    .load(images[position])
+                    .resize(600,400)
+                    .into(image);
+
             return view;
         }
 
