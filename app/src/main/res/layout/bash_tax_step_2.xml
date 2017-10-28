@@ -182,13 +182,13 @@
 
             <ImageButton
                 android:id="@+id/btnForward"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/forward_arrow_with_circle_icon"
-                android:visibility="gone" />
+                android:visibility="visible" />
 
 
         </LinearLayout>

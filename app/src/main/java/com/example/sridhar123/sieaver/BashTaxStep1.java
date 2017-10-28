@@ -9,6 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.sridhar123.sieaver.Constants.SharedPrefConstants;
+import com.example.sridhar123.sieaver.GeneralConstants.GeneralConstants;
+
+import java.util.ArrayList;
+
 /**
  * Created by sridhar123 on 28/10/17.
  */
@@ -18,6 +23,8 @@ public class BashTaxStep1 extends SieverBaseActivity{
     boolean isCardPpfChecked = false, isCardNscChecked = false, isCardFiveYearFdChecked = false, isCardHomeLoanChecked = false, isCardLifeInsuranceChecked = false;
     private ImageButton forward;
     private Button noneofthese;
+    private ArrayList<Integer> selectedCards = new ArrayList<>();
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,9 +42,26 @@ public class BashTaxStep1 extends SieverBaseActivity{
         forward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(BashTaxStep1.this,BashTaxStep2.class));
+                Intent intent = new Intent(BashTaxStep1.this,BashTaxStep2.class);
+
+                selectedCards.add(isCardPpfChecked ? 1 : 0);
+                selectedCards.add(isCardNscChecked ? 1 : 0);
+                selectedCards.add(isCardFiveYearFdChecked ? 1 : 0);
+                selectedCards.add(isCardHomeLoanChecked ? 1 : 0);
+                selectedCards.add(isCardLifeInsuranceChecked ? 1 : 0);
+
+                StringBuilder str = new StringBuilder();
+                str.append(isCardPpfChecked ? "1" : "0");
+                str.append(isCardNscChecked ? "1" : "0");
+                str.append(isCardFiveYearFdChecked ? "1" : "0");
+                str.append(isCardHomeLoanChecked ? "1" : "0");
+                str.append(isCardLifeInsuranceChecked ? "1" : "0");
+                prefManager.savePref(SharedPrefConstants.SHARED_PREFS, SharedPrefConstants.TAX_INVEST_COLLECTION, str.toString());
+                intent.putIntegerArrayListExtra(GeneralConstants.BTW_SELECTED_CARDS, selectedCards);
+                startActivity(intent);
             }
         });
+
         ppf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

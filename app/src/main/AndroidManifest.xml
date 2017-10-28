@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:theme"
-        >
+        android:name=".SieaverApplication">
 
         <activity
             android:name=".MainActivity"
