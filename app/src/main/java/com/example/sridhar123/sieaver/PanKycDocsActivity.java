@@ -1,6 +1,5 @@
 package com.example.sridhar123.sieaver;
 
-import android.*;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -14,11 +13,14 @@ import android.widget.Toast;
 
 import com.desmond.squarecamera.CameraActivity;
 import com.example.sridhar123.sieaver.GeneralConstants.GeneralConstants;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 /**
  * Created by sridhar123 on 28/10/17.
  */
 public class PanKycDocsActivity extends SieverBaseActivity {
+
 
     private static final int REQUEST_CAMERA_PERMISSION = 1;
     private static final int REQUEST_CAMERA_SELFIE = 100;
@@ -26,9 +28,14 @@ public class PanKycDocsActivity extends SieverBaseActivity {
     private static final int REQUEST_CAMERA_ADDRESS_FRONT = 102;
     private static final int REQUEST_CAMERA_ADDRESS_BACK = 103;
     private static final int REQUEST_CAMERA_SIGN = 104;
+    private FirebaseStorage mFirebaseStorage;
+    private StorageReference mStorageReference;
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.pan_kyc_docs_activity);
         requestForCameraPermission();
     }
 

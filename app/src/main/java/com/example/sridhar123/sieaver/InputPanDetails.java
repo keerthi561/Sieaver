@@ -11,18 +11,27 @@ import android.widget.Button;
  */
 public class InputPanDetails extends SieverBaseActivity{
 
-    private Button button_kyc_verify;
+    private Button button_kyc_verify,button_submit;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pan_details);
         button_kyc_verify= (Button) findViewById(R.id.kyc_verify_process);
+        button_submit = (Button) findViewById(R.id.btnSubmit);
 
         button_kyc_verify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(InputPanDetails.this,PanKycDocsActivity.class));
+            }
+        });
+
+        button_submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(InputPanDetails.this,DashboardActivity.class));
+                finish();
             }
         });
     }
