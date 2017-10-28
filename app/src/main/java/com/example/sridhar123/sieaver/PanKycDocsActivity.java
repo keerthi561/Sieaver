@@ -30,7 +30,8 @@ public class PanKycDocsActivity extends SieverBaseActivity {
     private static final int REQUEST_CAMERA_SIGN = 104;
     private FirebaseStorage mFirebaseStorage;
     private StorageReference mStorageReference;
-
+//    private Uri photoUri;
+    private String permission;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -41,14 +42,16 @@ public class PanKycDocsActivity extends SieverBaseActivity {
 
     // Check for camera permission in MashMallow
     public void requestForCameraPermission() {
-        final String permission = android.Manifest.permission.CAMERA;
+        permission = android.Manifest.permission.CAMERA;
         if (ContextCompat.checkSelfPermission(PanKycDocsActivity.this, permission)
                 != PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(PanKycDocsActivity.this, permission)) {
                 // Show permission rationale
+//                showPermissionRationaleDialog("Test", permission);
             } else {
                 // Handle the result in Activity#onRequestPermissionResult(int, String[], int[])
-                ActivityCompat.requestPermissions(PanKycDocsActivity.this, new String[]{permission}, REQUEST_CAMERA_PERMISSION);
+//                ActivityCompat.requestPermissions(PanKycDocsActivity.this, new String[]{permission}, REQUEST_CAMERA_PERMISSION);
+            requestForPermission(permission);
             }
         } else {
             // Start CameraActivity
@@ -85,8 +88,10 @@ public class PanKycDocsActivity extends SieverBaseActivity {
         Uri photoUri;
         if(resultCode!=RESULT_OK)
             return;
+
         if(requestCode == REQUEST_CAMERA_SELFIE){
             photoUri = data.getData();
+
             launchCamera(GeneralConstants.camera_pan_flag);
         } else if (requestCode == REQUEST_CAMERA_PAN) {
             photoUri = data.getData();

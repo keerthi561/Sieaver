@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click selfie"
+        android:id="@+id/btn1"
+        android:textColor="@color/textColorUniversal"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_corner_rectangle_transparent"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLICK IMAGE OF FRONT OF PAN"
+        android:id="@+id/btn2"
+        android:background="@drawable/rounded_corner_rectangle_transparent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/textColorUniversal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLICK IMAGE OF FRONT OF ADDRESS PROOF"
+        android:id="@+id/btn3"
+        android:background="@drawable/rounded_corner_rectangle_transparent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/textColorUniversal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLICK IMAGE OF BACK OF ADDRESS PROOF"
+        android:id="@+id/btn4"
+        android:background="@drawable/rounded_corner_rectangle_transparent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/textColorUniversal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLICK IMAGE OF SIGNATURE"
+        android:id="@+id/btn5"
+        android:background="@drawable/rounded_corner_rectangle_transparent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/textColorUniversal"/>
+</LinearLayout>

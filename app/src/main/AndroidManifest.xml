@@ -35,8 +35,14 @@
         <activity android:name=".InputPanDetails"></activity>
         <activity android:name=".PanKycDocsActivity"></activity>
         <activity android:name=".DashboardActivity"></activity>
-        <activity android:name=".BashTaxStep1"></activity>
-        <activity android:name=".BashTaxStep2"></activity>
+        <activity android:name=".BashTaxActivities.BashTaxStep1"></activity>
+        <activity android:name=".BashTaxActivities.BashTaxStep2"></activity>
+        <activity android:name=".BashTaxActivities.BashTaxStep3"
+                  android:windowSoftInputMode="stateVisible"></activity>
+        <activity android:name=".BashTaxActivities.BashTaxStep4"></activity>
+        <activity android:name=".BashTaxActivities.BashAmountAndDurationPicker"></activity>
+        <activity android:name=".PanKycDocsActivity2"></activity>
     </application>
+
 
 </manifest>

@@ -23,7 +23,7 @@ public class InputPanDetails extends SieverBaseActivity{
         button_kyc_verify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(InputPanDetails.this,PanKycDocsActivity.class));
+                startActivity(new Intent(InputPanDetails.this,PanKycDocsActivity2.class));
             }
         });
 

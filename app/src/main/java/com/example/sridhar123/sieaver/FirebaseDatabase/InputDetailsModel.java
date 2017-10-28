@@ -9,11 +9,13 @@ public class InputDetailsModel {
     private String name;
     private String email;
     private String referralCode;
+    private String photo;
 
-    public InputDetailsModel(String name, String email, String referralCode) {
+    public InputDetailsModel(String name, String email, String referralCode,String photo) {
         this.name = name;
         this.email = email;
         this.referralCode = referralCode;
+        this.photo=photo;
     }
 
     public String getEmail() {
@@ -38,5 +40,13 @@ public class InputDetailsModel {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
     }
 }

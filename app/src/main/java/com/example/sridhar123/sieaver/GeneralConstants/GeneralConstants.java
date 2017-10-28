@@ -13,5 +13,6 @@ public class GeneralConstants {
     public static final int camera_address_back_flag = 3;
     public static final int camera_sign_flag = 4;
     public static final String BTW_SELECTED_CARDS = "btw_selected_cards";
+    public static final String DEF_INSTALMENT = "def_instalment";
 
 }

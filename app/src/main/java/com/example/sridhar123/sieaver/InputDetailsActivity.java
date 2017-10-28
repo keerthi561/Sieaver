@@ -18,8 +18,6 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class InputDetailsActivity extends SieverBaseActivity{
 
-    private DatabaseReference mDatabase;
-    private FirebaseDatabase database;
     private EditText etName , etEmail,etReferralCode;
     private Button btn;
 
@@ -32,9 +30,6 @@ public class InputDetailsActivity extends SieverBaseActivity{
         etEmail= (EditText) findViewById(R.id.etEmail);
         etReferralCode = (EditText) findViewById(R.id.etReferralCode);
         btn = (Button) findViewById(R.id.btnForward);
-
-        database=FirebaseDatabase.getInstance();
-        mDatabase = database.getReference().child("users");
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +54,7 @@ public class InputDetailsActivity extends SieverBaseActivity{
     }
 
     private void writeNewUser(String name, String email, String code) {
-        InputDetailsModel input=  new InputDetailsModel(name,email,code);
+        InputDetailsModel input=  new InputDetailsModel(name,email,code,null);
         mDatabase.push().setValue(input);
     }
 }

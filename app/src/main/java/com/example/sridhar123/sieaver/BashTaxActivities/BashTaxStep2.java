@@ -1,12 +1,17 @@
-package com.example.sridhar123.sieaver;
+package com.example.sridhar123.sieaver.BashTaxActivities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputLayout;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import com.example.sridhar123.sieaver.Constants.SharedPrefConstants;
+import com.example.sridhar123.sieaver.R;
+import com.example.sridhar123.sieaver.SieverBaseActivity;
+import com.example.sridhar123.sieaver.Utility;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +25,8 @@ public class BashTaxStep2 extends SieverBaseActivity {
     private String collection;
     private EditText ppf,nsc,fd,hl,li;
     private TextInputLayout ppfi,nsci,fdi,hli,lii;
-
+    private ImageButton forwardButton;
+    
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,8 +42,36 @@ public class BashTaxStep2 extends SieverBaseActivity {
         fdi = (TextInputLayout) findViewById(R.id.inputFd);
         hli = (TextInputLayout) findViewById(R.id.inputHomeLoan);
         lii  = (TextInputLayout) findViewById(R.id.inputLifeInsurance);
-
+        
+        forwardButton = (ImageButton) findViewById(R.id.btnForward);
+        forwardButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                saveInvestedAmount();
+                startActivity(new Intent(BashTaxStep2.this,BashTaxStep3.class));
+            }
+        });
         showOnlyRelevantFields();
+        
+        
+    }
+
+    private void saveInvestedAmount() {
+        int sum = 0;
+        for (EditText et : listOfEdittexts) {
+            sum += Utility.getDigits(et.getText().toString(), BashTaxStep2.this);
+        }
+        //total amount
+        prefManager.savePref(SharedPrefConstants.SHARED_PREFS, SharedPrefConstants.ALREADY_INVESTED_AMOUNT, sum);
+        // Toast.makeText(BashTaxStep2.this, "" + sum, Toast.LENGTH_SHORT).show();
+
+        //individual amount
+        prefManager.savePref(SharedPrefConstants.SHARED_PREFS, SharedPrefConstants.AMT_PPF, Utility.getDigits(ppf.getText().toString(), BashTaxStep2.this));
+        prefManager.savePref(SharedPrefConstants.SHARED_PREFS, SharedPrefConstants.AMT_NSC, Utility.getDigits(nsc.getText().toString(), BashTaxStep2.this));
+        prefManager.savePref(SharedPrefConstants.SHARED_PREFS, SharedPrefConstants.AMT_FD, Utility.getDigits(fd.getText().toString(), BashTaxStep2.this));
+        prefManager.savePref(SharedPrefConstants.SHARED_PREFS, SharedPrefConstants.AMT_HOME_LOAN, Utility.getDigits(hl.getText().toString(), BashTaxStep2.this));
+        prefManager.savePref(SharedPrefConstants.SHARED_PREFS, SharedPrefConstants.AMT_LIFE_INSURANCE, Utility.getDigits(li.getText().toString(), BashTaxStep2.this));
+
     }
 
     private void showOnlyRelevantFields() {
