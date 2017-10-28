@@ -17,6 +17,7 @@ public class DashboardActivity extends SieverBaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.dashboard_activity);
         cardbashtax = (CardView) findViewById(R.id.cardBashTax);
         setgoalscard = (CardView) findViewById(R.id.cardSetDreams);
@@ -26,6 +27,20 @@ public class DashboardActivity extends SieverBaseActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(DashboardActivity.this,BashTaxStep1.class));
+            }
+        });
+
+        setgoalscard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DashboardActivity.this,DreamStep1.class));
+            }
+        });
+
+        beaverawaycard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DashboardActivity.this,BeaverAwayStep1.class));
             }
         });
     }

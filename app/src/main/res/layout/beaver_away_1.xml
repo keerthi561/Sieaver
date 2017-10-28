@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Beaver Away"
+            android:textColor="@color/textColorUniversal"
+            android:textSize="18sp"
+      />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="How much can you\nset aside every week?"
+            android:textColor="@color/textColorUniversal"
+            android:textSize="24sp"
+      />
+
+        <com.pixplicity.multiviewpager.MultiViewPager
+            android:id="@+id/amountPicker"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="56dp"
+            app:matchChildWidth="@+id/vg_cover" />
+
+        <TextView
+            android:id="@+id/tvSetCustomAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:text="S E T   A   C U S T O M   A M O U N T"
+            android:textColor="@color/colorWhiteOpacity50"
+            android:textSize="10sp"
+            />
+
+
+        <Button
+            android:id="@+id/btnOneTimeInvestment"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/rounded_corner_rectangle_transparent"
+            android:text="I  W A N T  T O  M A K E  A  O N E  T I M E  I N V E S T M E N T"
+            android:textColor="@color/textColorUniversal"
+            android:textSize="10sp"
+             />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/slope"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom"></FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_gravity="bottom">
+
+        <ImageButton
+            android:id="@+id/btnForward"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/forward_arrow_with_circle_icon"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</FrameLayout>

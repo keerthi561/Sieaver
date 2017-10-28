@@ -1,96 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical">
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardBashTax"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
         android:clickable="true"
-        app:cardBackgroundColor="@color/lightGreen"
-       >
+        android:padding="5dp"
+        app:cardBackgroundColor="@color/lightGreen">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-           <TextView
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:text="BASH TAX"
-               android:layout_gravity="center"
-               android:gravity="center"
-               android:textSize="15sp"
-               android:layout_marginTop="5dp"
-               android:textStyle="bold"/>
+            android:orientation="vertical">
+
             <TextView
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Invest in most rewarding tax-saving plans effortlessly!"
-                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="BASH TAX"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:gravity="center"/>
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Invest in most rewarding tax-saving plans effortlessly!"
+                android:textSize="20sp" />
         </LinearLayout>
 
 
-</android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
+
     <android.support.v7.widget.CardView
         android:id="@+id/cardSetDreams"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
+        android:layout_weight="1"
         android:clickable="true"
         app:cardBackgroundColor="@color/colorIciciLight">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SET GOALS"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="15sp"
-            android:layout_marginTop="5dp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="The simplest and most effiecient way to achieve anything on the bucketlist!"
-            android:textSize="20sp"
-            android:gravity="center"/>
-    </LinearLayout>
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="SET GOALS"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="The simplest and most effiecient way to achieve anything on the bucketlist!"
+                android:textSize="20sp" />
+        </LinearLayout>
     </android.support.v7.widget.CardView>
+
     <android.support.v7.widget.CardView
         android:id="@+id/cardBeaverSaver"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
+        android:layout_weight="1"
         android:clickable="true"
         app:cardBackgroundColor="@color/colorSqrrlAwayEndColor">
 
@@ -98,25 +104,25 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity=""
             >
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="BEAVER AWAY"
-                android:gravity="center"
-                android:textSize="15sp"
                 android:layout_marginTop="5dp"
-                android:textStyle="bold"/>
+                android:gravity="center"
+                android:text="BEAVER AWAY"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
             <TextView
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The power of small savings.Earn 7-8% on bank balance!"
-                android:textSize="20sp"
-                android:gravity="center"
                 android:layout_gravity="center"
-                />
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="The power of small savings.Earn 7-8% on bank balance!"
+                android:textSize="20sp" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>

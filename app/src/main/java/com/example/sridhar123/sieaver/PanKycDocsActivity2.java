@@ -78,7 +78,7 @@ public class PanKycDocsActivity2 extends SieverBaseActivity {
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == CAMERA_PIC_REQUEST) {
-            Bitmap image = (Bitmap) data.getExtras().get("data");
+//            Bitmap image = (Bitmap) data.getExtras().get("data");
 //            Uri uri = data.getData();
 //            StorageReference photoRef = mStorageReference.child(uri.getLastPathSegment());
 //            photoRef.putFile(uri).addOnSuccessListener(this, new OnSuccessListener<UploadTask.TaskSnapshot>() {

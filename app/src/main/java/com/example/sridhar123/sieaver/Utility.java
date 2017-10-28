@@ -6,6 +6,8 @@ import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.Spanned;
 
+import java.util.ArrayList;
+
 /**
  * Created by sridhar123 on 28/10/17.
  */
@@ -63,4 +65,44 @@ public class Utility {
         return stringBuilder.reverse().toString();
     }
 
+    public static ArrayList<String> createSqrrlAwayPickerValues(int beginValue, int endValue, int stepValue) {
+        int size = ((endValue - beginValue) / stepValue) + 1;
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = 0; i < size; i++) {
+            list.add(addSeparators(beginValue + i * stepValue));
+        }
+        list.add(0, "500");
+        return list;
+    }
+
+    public static PickerValues createBeaverAwayPickerValuesWithCustom(int beginValue, int endValue, int stepValue, int customValue) {
+        ArrayList<String> list = new ArrayList<>();
+        PickerValues pickerValues = new PickerValues();
+        int size = ((endValue - beginValue) / stepValue) + 1;
+        for (int i = 0; i < size; i++) {
+            int value = (beginValue + i * stepValue);
+            if (i == 0 && customValue < value) {
+                list.add(addSeparators(customValue));
+                list.add(addSeparators(value));
+            } else if (i == size - 1 && customValue > value) {
+                list.add(addSeparators(value));
+                list.add(addSeparators(customValue));
+            } else {
+                int nextValue = (beginValue + (i + 1) * stepValue);
+                if (customValue > value && customValue < nextValue) {
+                    list.add(addSeparators(value));
+                    list.add(addSeparators(customValue));
+                } else {
+                    list.add(addSeparators(value));
+                }
+            }
+        }
+        if (!list.contains("500")) {
+            list.add(0, "500");
+        }
+        pickerValues.setList(list);
+        pickerValues.setSelectedIndex(list.indexOf(addSeparators(customValue)));
+
+        return pickerValues;
+    }
 }

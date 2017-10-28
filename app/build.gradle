@@ -33,6 +33,7 @@ dependencies {
     compile 'com.android.support:design:24.2.1'
     compile 'com.github.rahatarmanahmed:circularprogressview:2.5.0'
     compile 'com.github.boxme:squarecamera:1.1.0'
+    compile 'com.pixplicity.multiviewpager:library:1.0'
 //    compile 'com.roughike:bottom-bar:2.3.1'
     testCompile 'junit:junit:4.12'
 }
