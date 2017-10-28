@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="S T E P   2"
+            android:textColor="@color/textColorUniversal"
+            android:textSize="10sp"
+            app:fontName="LibreFranklin-Medium.ttf" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" / 4"
+            android:textColor="@color/colorWhiteOpacity40"
+            android:textSize="10sp"
+            app:fontName="LibreFranklin-Medium.ttf" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLabelApply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="How much will you be investing in each of\nthese this FY"
+                android:textColor="@color/textColorUniversal"
+                android:textSize="16sp"
+              />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputPpf"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="45dp"
+                >
+
+                <EditText
+                    android:id="@+id/etPpf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:hint="Public Provident Fund (PPF)"
+                    android:inputType="number"
+                    android:textColor="@color/textColorUniversal"
+                    android:textColorHint="@color/colorWhiteOpacity50"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputNsc"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <EditText
+                    android:id="@+id/etNsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:hint="National Savings Certificate (NSC)"
+                    android:inputType="number"
+                    android:textColor="@color/textColorUniversal"
+                    android:textColorHint="@color/colorWhiteOpacity50"
+                    android:textSize="16sp"
+                   />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputFd"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <EditText
+                    android:id="@+id/etFd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:hint="5-Year Fixed Deposit"
+                    android:inputType="number"
+                    android:textColor="@color/textColorUniversal"
+                    android:textColorHint="@color/colorWhiteOpacity50"
+                    android:textSize="16sp"
+                   />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputHomeLoan"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <EditText
+                    android:id="@+id/etHomeLoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:hint="Home Loan Principal"
+                    android:inputType="number"
+                    android:textColor="@color/textColorUniversal"
+                    android:textColorHint="@color/colorWhiteOpacity50"
+                    android:textSize="16sp"
+                   />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLifeInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <EditText
+                    android:id="@+id/etLifeInsurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:hint="Life Insurance Premium"
+                    android:inputType="number"
+                    android:textColor="@color/textColorUniversal"
+                    android:textColorHint="@color/colorWhiteOpacity50"
+                    android:textSize="16sp"
+                   />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <ImageButton
+                android:id="@+id/btnForward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/forward_arrow_with_circle_icon"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

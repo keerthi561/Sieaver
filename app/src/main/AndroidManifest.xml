@@ -35,6 +35,8 @@
         <activity android:name=".InputPanDetails"></activity>
         <activity android:name=".PanKycDocsActivity"></activity>
         <activity android:name=".DashboardActivity"></activity>
+        <activity android:name=".BashTaxStep1"></activity>
+        <activity android:name=".BashTaxStep2"></activity>
     </application>
 
 </manifest>
