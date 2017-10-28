@@ -1,4 +1,4 @@
-package com.example.sridhar123.sieaver;
+package com.example.sridhar123.sieaver.BeaverAway;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,8 +9,12 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.example.sridhar123.sieaver.AmountFragment;
 import com.example.sridhar123.sieaver.GeneralConstants.GeneralConstants;
 import com.example.sridhar123.sieaver.Intros.ZoomOutPageTransformer;
+import com.example.sridhar123.sieaver.R;
+import com.example.sridhar123.sieaver.SieverBaseActivity;
+import com.example.sridhar123.sieaver.Utility;
 import com.pixplicity.multiviewpager.MultiViewPager;
 
 import java.util.ArrayList;
@@ -18,7 +22,7 @@ import java.util.ArrayList;
 /**
  * Created by sridhar123 on 28/10/17.
  */
-public class BeaverAwayStep1 extends SieverBaseActivity{
+public class BeaverAwayStep1 extends SieverBaseActivity {
 
     private ArrayList<String> amountsList;
     private int selectedAmountIndex = 1;

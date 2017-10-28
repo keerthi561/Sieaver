@@ -34,7 +34,8 @@
                 android:gravity="center"
                 android:text="BASH TAX"
                 android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:background="@drawable/rounded_corner_rectangle_green"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -59,7 +60,7 @@
         android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:clickable="true"
-        app:cardBackgroundColor="@color/colorIciciLight">
+        app:cardBackgroundColor="@color/colorPinkDot">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -74,7 +75,8 @@
                 android:gravity="center"
                 android:text="SET GOALS"
                 android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:background="@drawable/rounded_corner_rectangle_pink"/>
 
             <TextView
                 android:id="@+id/textView"
@@ -98,7 +100,7 @@
         android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:clickable="true"
-        app:cardBackgroundColor="@color/colorSqrrlAwayEndColor">
+        app:cardBackgroundColor="@color/colorAliceBlue">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -113,7 +115,8 @@
                 android:gravity="center"
                 android:text="BEAVER AWAY"
                 android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:background="@drawable/rounded_corner_rectangle_orange"/>
 
             <TextView
                 android:layout_width="match_parent"

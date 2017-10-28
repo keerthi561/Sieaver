@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import com.example.sridhar123.sieaver.BashTaxStep30;
 import com.example.sridhar123.sieaver.Constants.SharedPrefConstants;
 import com.example.sridhar123.sieaver.R;
 import com.example.sridhar123.sieaver.SieverBaseActivity;
@@ -31,6 +32,7 @@ public class BashTaxStep2 extends SieverBaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bash_tax_step_2);
+
         ppf = (EditText) findViewById(R.id.etPpf);
         nsc = (EditText) findViewById(R.id.etNsc);
         fd = (EditText) findViewById(R.id.etFd);
@@ -52,8 +54,6 @@ public class BashTaxStep2 extends SieverBaseActivity {
             }
         });
         showOnlyRelevantFields();
-        
-        
     }
 
     private void saveInvestedAmount() {

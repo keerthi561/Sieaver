@@ -11,7 +11,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:minHeight="?attr/actionBarSize">
 
         <TextView
             android:id="@+id/toolbar_title"
@@ -21,7 +21,7 @@
             android:text="S T E P   1"
             android:textColor="@color/textColorUniversal"
             android:textSize="10sp"
-            />
+            app:fontName="LibreFranklin-Medium.ttf" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -30,7 +30,7 @@
             android:text=" / 4"
             android:textColor="@color/colorWhiteOpacity40"
             android:textSize="10sp"
-            />
+            app:fontName="LibreFranklin-Medium.ttf" />
 
     </android.support.v7.widget.Toolbar>
 
@@ -51,36 +51,43 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
                 android:gravity="center_horizontal"
-                android:text="BashTaxStepOne"
+                android:text="Bash Tax Step 1 "
                 android:textColor="@color/textColorUniversal"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+               />
 
             <android.support.v7.widget.CardView
                 android:id="@+id/cardPpf"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="30dp"
                 card_view:cardBackgroundColor="@color/textColorUniversal"
                 card_view:cardCornerRadius="2dp"
-                card_view:cardElevation="3dp"
-                >
+                card_view:cardElevation="3dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
+                    <ImageView
+                        android:id="@+id/imgPpf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                    />
                     <TextView
                         android:id="@+id/tvPpf"
                         android:layout_width="wrap_content"
-                        android:layout_height="20dp"
+                        android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="68dp"
                         android:text="Public Provident Fund"
                         android:textColor="@color/textColorPrimary"
                         android:textSize="14sp"
-                        android:gravity="center_vertical"
                         />
 
                     <ImageView
@@ -90,8 +97,8 @@
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="16dp"
-                        android:visibility="visible"
-                        android:src="@drawable/grey_circle"/>
+                        android:src="@drawable/grey_circle"
+                        android:visibility="visible" />
 
                     <ImageView
                         android:id="@+id/imgPpfChecked"
@@ -109,8 +116,7 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/cardNsc"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="8dp"
@@ -128,20 +134,19 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="16dp"
                         android:layout_marginLeft="16dp"
-                        android:layout_marginTop="16dp" />
+                        android:layout_marginTop="16dp"
+                      />
 
                     <TextView
                         android:id="@+id/tvNsc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginTop="20dp"
                         android:layout_marginLeft="68dp"
                         android:text="National Savings Certificate"
                         android:textColor="@color/textColorPrimary"
                         android:textSize="14sp"
-                        android:gravity="center_vertical"
-                        />
+                        app:fontName="LibreFranklin-Medium.ttf" />
 
                     <ImageView
                         android:id="@+id/imgNscUnchecked"
@@ -169,7 +174,7 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/cardFiveYearFd"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="8dp"
@@ -179,7 +184,7 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <ImageView
                         android:id="@+id/imgFiveYearFd"
@@ -196,11 +201,10 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="68dp"
-                        android:text="5 Year Fixed Deposit"
-                        android:gravity="center_vertical"
+                        android:text="Fixed Deposit"
                         android:textColor="@color/textColorPrimary"
                         android:textSize="14sp"
-                        />
+                        app:fontName="LibreFranklin-Medium.ttf" />
 
                     <ImageView
                         android:id="@+id/imgFiveYearFdUnchecked"
@@ -248,7 +252,7 @@
                         android:layout_marginBottom="16dp"
                         android:layout_marginLeft="16dp"
                         android:layout_marginTop="16dp"
-                        />
+                         />
 
                     <TextView
                         android:id="@+id/tvHomeLoan"
@@ -306,7 +310,7 @@
                         android:layout_marginBottom="16dp"
                         android:layout_marginLeft="16dp"
                         android:layout_marginTop="16dp"
-                        />
+                   />
 
                     <TextView
                         android:id="@+id/tvLifeInsurance"
@@ -314,10 +318,10 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="68dp"
-                        android:text="Life Insurance"
+                        android:text="Life Insurance "
                         android:textColor="@color/textColorPrimary"
                         android:textSize="14sp"
-                        />
+                        app:fontName="LibreFranklin-Medium.ttf" />
 
                     <ImageView
                         android:id="@+id/imgLifeInsuranceUnchecked"
@@ -355,16 +359,17 @@
                     android:layout_centerInParent="true"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
+                    android:background="@drawable/rounded_corner_rectangle_green"
                     android:text="N O N E  O F  T H E S E"
                     android:textColor="@color/textColorUniversal"
                     android:textSize="10sp"
                     android:visibility="visible"
-                    />
+                   />
 
                 <ImageButton
                     android:id="@+id/btnForward"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_centerInParent="true"
                     android:background="@drawable/forward_arrow_with_circle_icon"
                     android:visibility="gone" />

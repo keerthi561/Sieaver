@@ -7,12 +7,16 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 
 import com.example.sridhar123.sieaver.BashTaxActivities.BashTaxStep1;
+import com.example.sridhar123.sieaver.BeaverAway.BeaverAwayStep1;
+import com.example.sridhar123.sieaver.DreamsComeTrue.DreamStep1;
 
+import android.os.Handler;
 /**
  * Created by sridhar123 on 28/10/17.
  */
 public class DashboardActivity extends SieverBaseActivity {
     private CardView cardbashtax,setgoalscard,beaverawaycard;
+    private boolean hasTimePassed=false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,4 +48,5 @@ public class DashboardActivity extends SieverBaseActivity {
             }
         });
     }
+
 }

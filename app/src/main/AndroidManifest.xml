@@ -33,21 +33,25 @@
             android:screenOrientation="portrait"></activity>
         <activity android:name=".InputDetailsActivity"></activity>
         <activity android:name=".InputPanDetails"></activity>
-        <activity android:name=".PanKycDocsActivity"></activity>
+        <activity android:name=".PanKycUploads.PanKycDocsActivity"></activity>
         <activity android:name=".DashboardActivity"></activity>
+        <activity android:name=".BashTaxStep30"></activity>
         <activity android:name=".BashTaxActivities.BashTaxStep1"></activity>
         <activity android:name=".BashTaxActivities.BashTaxStep2"></activity>
         <activity android:name=".BashTaxActivities.BashTaxStep3"
                   android:windowSoftInputMode="stateVisible"></activity>
         <activity android:name=".BashTaxActivities.BashTaxStep4"></activity>
         <activity android:name=".BashTaxActivities.BashAmountAndDurationPicker"></activity>
-        <activity android:name=".PanKycDocsActivity2"></activity>
+        <activity android:name=".PanKycUploads.PanKycDocsActivity2"></activity>
 
-        <activity android:name=".DreamStep1"></activity>
+        <activity android:name=".DreamsComeTrue.DreamStep1"></activity>
+        <activity android:name=".DreamsComeTrue.DreamStep2"></activity>
+        <activity android:name=".DreamsComeTrue.DreamStep3"></activity>
+        <activity android:name=".DreamsComeTrue.DreamStep4"></activity>
 
-        <activity android:name=".BeaverAwayStep1"></activity>
-        <activity android:name=".BeaverAwayPowerOfSmallSavingsActivity"></activity>
-        <activity android:name=".BeaverAwayChosenFundsActivity"></activity>
+        <activity android:name=".BeaverAway.BeaverAwayStep1"></activity>
+        <activity android:name=".BeaverAway.BeaverAwayPowerOfSmallSavingsActivity"></activity>
+        <activity android:name=".BeaverAway.BeaverAwayChosenFundsActivity"></activity>
         <activity android:name=".FundsDetailActivity"></activity>
     </application>
 

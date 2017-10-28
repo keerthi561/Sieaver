@@ -21,10 +21,7 @@ public class BashTaxStep3 extends SieverBaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bash_tax_step_3);
-
-
         forward = (Button) findViewById(R.id.btnForward1);
-
         forward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

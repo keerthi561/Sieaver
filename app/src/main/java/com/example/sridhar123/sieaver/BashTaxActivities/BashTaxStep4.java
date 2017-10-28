@@ -37,11 +37,10 @@ public class BashTaxStep4 extends SieverBaseActivity {
         investment = (TextView) findViewById(R.id.tvInvestment);
         maxTaxSaving = (TextView) findViewById(R.id.tvMaxTaxSavings);
         defaultInstallment = (TextView) findViewById(R.id.tvDefaultInstalment);
-
         potentialSavings = (TextView) findViewById(R.id.tvPotentialSavings);
         cardYouCanInvest = (CardView) findViewById(R.id.cardYouCanInvest);
         cardBackToHome = (CardView) findViewById(R.id.cardBackTohome);
-        btn = (Button) findViewById(R.id.btnForward);
+        btn = (Button) findViewById(R.id.btnProceed);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

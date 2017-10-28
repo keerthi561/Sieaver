@@ -1,3 +1,154 @@
 <resources>
     <string name="app_name">Sieaver</string>
+
+    <string name="form_mobile_number">Mobile Number</string>
+    <string name="form_email">Email ID</string>
+    <string name="pan">Permanent Account Number</string>
+    <string name="alphabets">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="numbers">0123456789</string>
+    <string name="dob">Date of Birth</string>
+    <string name="name">Name</string>
+    <string name="email">Email ID</string>
+    <string name="referralCodeHint">Enter Referral Code to Earn Rewards</string>
+    <!--<string name="regExIfsc">[A-Z]{4}[0]{1}[0-9]{6}</string>-->
+    <string name="regExIfsc">^[a-zA-Z]{4}[0][a-zA-Z0-9]{6}</string>
+    <string name="regExPan">[A-Z]{5}[0-9]{4}[A-Z]{1}</string>
+    <string name="regExPersonName">[a-zA-Z][a-zA-Z ]+</string>
+    <string name="regExNum">\\d{4}</string>
+    <string-array name="values">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4 is really long</item>
+        <item>Item 5</item>
+        <item>Item 6</item>
+    </string-array>
+    <item name="value_true" type="bool">true</item>
+    <item name="value_false" type="bool">false</item>
+    <item name="integer_zero" type="integer">0</item>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="triangle_up">&#x25B2;</string>
+    <string name="triangle_downward">&#x25bc;</string>
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <string name="Rs">\u20B9</string>
+    <string name="forward_arrow">\u279E</string>
+    <string name="filled_circle">\u25CF</string>
+    <string name="triangle_down">&#129171;</string>
+
+    <string name="mobile_prefix">+91 - </string>
+    <string name="percentSymbol">%</string>
+
+    <string name="sqrrl_away_zero_state_card_subtext">Let us show you the power of  small savings. Earn 7-8% on your idle bank balance, withdraw anytime!</string>
+    <string name="byod_zero_state_card_subtext">The simplest and most efficient way to achieve anything on your bucket list!</string>
+    <string name="axe_tax_away_zero_state_card_subtext">Invest in the most rewarding tax-saving plans, effortlessly!</string>
+
+    <string name="sqrrl_power_of_savings_title">Set Aside</string>
+    <string name="sqrrl_power_of_savings_card_title">P O W E R  O F  S M A L L  S A V I N G S</string>
+    <string name="sqrrl_power_of_savings_card_subtext">Projected value of your savings</string>
+    <string name="sqrrl_power_of_savings_earnings">Earnings:</string>
+
+    <string name="byod_category_description_title">I want to save for</string>
+    <string name="byod_goal_one">A Purchase</string>
+    <string name="byod_goal_two">An Experience</string>
+    <string name="byod_goal_three">An Occasion</string>
+    <string name="byod_goal_four">A Trip</string>
+    <string name="byod_goal_five">A new Custom Goal</string>
+    <string name="byod_duration_subtext">By when do you want to achieve your goal?</string>
+    <string name="byod_tooltip_for_amt_too_high">Feel its too high? Want to save less? Increase or decrease this amount and your goal period will automatically be adjusted.</string>
+
+    <string name="pan_kyc_begin_subtext">Looks like the mobile number you\'ve provided\ndoes not match the one in your Aadhar Records</string>
+    <string name="bank_details_subtext">Please enter details of your primary net-banking enabled bank account.</string>
+    <string name="axe_tax_begin_footer_text">Do you know how much you should invest this financial year to save tax?</string>
+
+    <string name="pf">Public  Provident Fund</string>
+    <string name="nsc">National Savings Certificate</string>
+    <string name="fd">5 Year Fixed Deposit</string>
+    <string name="hl">Home Loan</string>
+    <string name="li">Life Insurance for myself</string>
+    <string name="ifsc_text">The Indian Financial System Code (IFS Code or IFSC) is an 11-character alphanumeric code that facilitates electronic funds transfer in India. A code uniquely identifies each bank branch participating in the two main Payment and settlement systems in India: the RTGS and the NEFT systems.</string>
+    <string name="fatca_pep">I am not a Politically-Exposed-Person (PEP)</string>
+    <string name="fatca_indian_resident">I am a resident and tax payer of India</string>
+    <string name="clever_tap_account_id">R5Z-796-Z84Z</string>
+    <string name="clever_tap_account_token">6ca-152</string>
+
+    <string name="dashboard_no_internet_msg">You are offline. The data you see is not updated.</string>
+    <string name="wrong_otp">Worng OTP. Please try again.</string>
+    <string name="about_us_url">https://sqrrl.in/about.html</string>
+    <string name="enterMPinTxt">Enter your M-Pin</string>
+
+    <!-- string variables for investment menu -->
+    <string name="deleteTxt">Clear and Start Afresh</string>
+    <string name="updateTxt">Update</string>
+
+    <!-- string variables for payment type selection -->
+    <string name="cancelTxt">CANCEL</string>
+    <string name="choosePayTypeTitle">Choose Payment Preference</string>
+    <string name="debitCardTxt">Debit Card (Visa/Mastercard)</string>
+    <string name="netBankingTxt">Net Banking</string>
+    <string name="nachTxt">One Time Mandate (NACH)</string>
+    <string name="okTxt">OK</string>
+    <string name="payTypeMsg">Which payment option you want to use?</string>
+    <string name="payTypeTitle">Select Payment Mode</string>
+    <string name="rupayCardTxt">RuPay Card</string>
+    <string name="saveChoiceForLater">Save this choice for later transactions</string>
+
+    <!-- string variables for setting screen -->
+    <string name="accNumberTxt">%1$s \nA/C %2$s</string>
+    <string name="alwaysAskTxt">Always ask</string>
+    <string name="updateProfileTxt">Update Profile</string>
+    <string name="paymentModeTxt">Payment Mode</string>
+
+    <!-- string variables with the placeholder to put the string at runtime -->
+    <string name="byodDescTxt">BYOD - %s</string>
+
+    <!-- string variable for product names -->
+    <string name="sqrrlAwayTxt">Sqrrl Away</string>
+    <string name="byodTxt">Byod</string>
+    <string name="axeTaxTxt">Axe Tax</string>
+
+    <!-- string variables for all screen -->
+    <string name="accNoTxt">A/C %s</string>
+    <string name="enterValidReferralCode">Please enter a valid referral code.</string>
+    <string name="invest_payment_secure_txt">Your payment details are secured via 128-bit encryption by BillDesk.</string>
+    <string name="sqrrl_away_withdrawal_txt">Amount between %1$s and %2$s will be credited instantly.</string>
+    <string name="infoAmtInvestMsg">Money will be reflected in your %s account in 1-2 business days</string>
+    <string name="infoAmtWithdrawnMsg">Money will be reflected in your bank account in 1 business day</string>
+    <string name="referralCodeAccepted">Referral code accepted!!</string>
+    <string name="upcomingNachTransactionTitle">Will be auto-debited from your account within one business day</string>
+    <string name="verifyingReferralCode">Verifying referral code...</string>
+
+    <!-- string variables for copy edit changes -->
+    <string name="axeTaxChosenFundsDescTxt">All Section 80C investments are locked for 3 years, from the date of investment. </string>
+    <string name="axeTaxStepOneTitleTxt">Which of these are you doing this FY?</string>
+    <string name="byodPreviewInfoTxt">Returns are indicative of past performance and should not be construed to be guaranteed</string>
+    <string name="helloUserDescTxt">Welcome to Sqrrl, a buddy you can count on to help you save and grow your money, effortlessly!</string>
+    <string name="higherReturnsTxt">Higher Returns</string>
+    <string name="mobileInputDescTxt">We will send you an OTP via SMS for verification</string>
+    <string name="mpinIntroDescTxt">Looks like you don\'t have an m-pin set for your account. Set one to secure your account now.</string>
+    <string name="saveInvestProsperTxt">Save  |  Invest  |  Prosper</string>
+    <string name="shareMsg">You know what\’s great? Saving with Sqrrl. Reaching your Dreams by saving with Sqrrl. Why don\’t you try it? Download now\n</string>
+
+    <!--shared element transition transitionName-->
+    <string name="investReveal">circular_reveal_invest</string>
+    <string name="withdrawReveal">circular_reveal_withdraw</string>
+
+    <!--string variable for status bar title  -->
+
 </resources>

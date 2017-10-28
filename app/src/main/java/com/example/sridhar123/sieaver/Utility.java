@@ -6,6 +6,8 @@ import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.Spanned;
 
+import com.example.sridhar123.sieaver.GeneralConstants.GeneralConstants;
+
 import java.util.ArrayList;
 
 /**
@@ -13,6 +15,8 @@ import java.util.ArrayList;
  */
 
 public class Utility {
+
+    private static ArrayList<Integer> amountValues = new ArrayList<>();
 
     public static boolean isEmailValid(String email) {
         if (android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
@@ -104,5 +108,19 @@ public class Utility {
         pickerValues.setSelectedIndex(list.indexOf(addSeparators(customValue)));
 
         return pickerValues;
+    }
+
+    public static ArrayList<String> createPickerValues(Context context, int beginValue, int endValue, int stepValue, String type) {
+        int size = ((endValue - beginValue) / stepValue) + 1;
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = 0; i < size; i++) {
+            if (type.equalsIgnoreCase(GeneralConstants.pickerTypeAmount)) {
+                list.add(addSeparators(beginValue + i * stepValue));
+            } else if (type.equalsIgnoreCase(GeneralConstants.pickerTypeMonths)) {
+                list.add((beginValue + i * stepValue) + " months");
+            }
+            amountValues.add(beginValue + i * stepValue);
+        }
+        return list;
     }
 }
