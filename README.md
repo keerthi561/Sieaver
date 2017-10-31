@@ -11,12 +11,12 @@ by Adhaar and other means as well!Isn't that cool. All the process will be done 
 1) **Beaver Saver**
 
 Beaver is a rodent which tries to save small amounts of walnuts day by day .
-Getting inspired by the very animal , I have decided to incorporate this feature wherein small amounts of money which will be decided by the user will be debited from the bank account every week and invested in the mututal fund
+Getting inspired by the very animal,I have decided to incorporate this feature wherein small amounts of money which will be decided by the user will be debited from the bank account every week and invested in the mututal fund
 which we think will be best for the user.A variety of mututal funds will be listed which will include the risk factor involved in investing in that particular fund and also the past performances of that fund.The user can then choose the fund and fund will be invested directly.
 The funds that will be listed will be liquid funds into which the money will be invested.
 
-Advantages of this over saving normally in banks:
-The money will grow in the mutual funds at a rate of 6.5-7.5% instead of the usual 3% which is offered in the bank accounts.Isnt't tha amazing!
+Advantages of this over saving normally in banks are as follows:
+The money will grow in the mutual funds at a rate of 6-7% instead of the usual 3% which is offered in the bank accounts.Isnt't tha amazing!
 
 2) **Goal setting**
 
@@ -25,7 +25,7 @@ every time . Getting motivated to solve this particular problem , I have decided
 sum of money and invest in Debt funds and slowly and steadily the money will grow which can be monitored by the app..And there will come a time 
 when the goal will be reached and then plan a trip to Goa!The user will need to enter the amount of money he requires to achieve a particular goal and 
 and the app will show the time it will take to achieve it.
-The money will be invested in debt funds of the mutual funds category . The reason behind this is that the interest rates on debt funds remain same for a period of months and so the user will be getting constant money each time.
+The money will be invested in debt funds of the mutual funds category .The reason behind this is that the interest rates on debt funds remain same for a period of months and so the user will be getting constant money each time.
 
 3) **Bashing the Tax**
 
