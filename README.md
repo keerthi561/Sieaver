@@ -27,7 +27,7 @@ when the goal will be reached and then plan a trip to Goa!The user will need to 
 and the app will show the time it will take to achieve it.
 The money will be invested in debt funds of the mutual funds category .The reason behind this is that the interest rates on debt funds remain same for a period of months and so the user will be getting constant money each time.
 
-3) **Bashing the Tax**
+3) **Bash the Tax**
 
 Getting away from the axe of the tax is always a matter of concern.The app will let you know where to invest such as in PPF , Narional Savings certificate.
 Life insurance etc. and it will help the user in getting away from the axe tax.
