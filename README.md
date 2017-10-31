@@ -21,7 +21,7 @@ The money will grow in the mutual funds at a rate of 6.5-7.5% instead of the usu
 2) **Goal setting**
 
 Being an engineer , I always have dreams and aspirations of going to Goa along with my friends.But.......!"Paise ki kami hai bro" line comes out
-every time . Getting motivated to solve this particular problem , I have decided to incorporate this feature where the user will be able to save particualr
+every time . Getting motivated to solve this particular problem , I have decided to incorporate this feature where the user will be able to save particular
 sum of money and invest in Debt funds and slowly and steadily the money will grow which can be monitored by the app..And there will come a time 
 when the goal will be reached and then plan a trip to Goa!The user will need to enter the amount of money he requires to achieve a particular goal and 
 and the app will show the time it will take to achieve it.
@@ -33,4 +33,4 @@ Getting away from the axe of the tax is always a matter of concern.The app will 
 Life insurance etc. and it will help the user in getting away from the axe tax.
 This would use the equity funds.
 
-Many more features will be added later on!
+Many more features will be added later on!Stay tuned.
