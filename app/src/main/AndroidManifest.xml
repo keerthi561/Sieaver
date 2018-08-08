@@ -2,7 +2,7 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.sridhar123.sieaver">
+    package="com.example.sridhar123.syclo">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA"></uses-permission>
@@ -29,11 +29,12 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
-        <activity android:name=".Intros.IntroductionActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".InputDetailsActivity"></activity>
-        <activity android:name=".InputPanDetails"></activity>
-        <activity android:name=".PanKycUploads.PanKycDocsActivity"></activity>
+        <activity
+            android:name=".Intros.IntroductionActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".InputDetailsActivity" />
+        <activity android:name=".InputPanDetails" />
+        <activity android:name=".PanKycUploads.PanKycDocsActivity" />
         <activity android:name=".DashboardActivity"></activity>
         <activity android:name=".BashTaxStep30"></activity>
         <activity android:name=".BashTaxActivities.BashTaxStep1"></activity>

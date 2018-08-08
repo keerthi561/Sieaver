@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 
+def app_name = System.getenv('app_name') ?: "Eventyay Organizer"
+
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.1"

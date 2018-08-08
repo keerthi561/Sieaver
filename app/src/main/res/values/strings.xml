@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sieaver</string>
+    <string name="app_name">Syclo</string>
 
     <string name="form_mobile_number">Mobile Number</string>
     <string name="form_email">Email ID</string>
